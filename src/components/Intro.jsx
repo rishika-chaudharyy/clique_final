@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/Intro.css";
-
+import logo from "../assets/logo.png"; // Ensure you have a logo image in the specified path
 const Intro = ({ onComplete }) => {
   const [slideOut, setSlideOut] = useState(false);
   const canvasRef = useRef(null);
@@ -65,7 +65,7 @@ const Intro = ({ onComplete }) => {
     <div className={`intro-container ${slideOut ? "slide-left" : ""}`}>
       <canvas ref={canvasRef} className="snow-canvas" />
       <div className="intro-content">
-        <img src="/logo.png" alt="Logo" className="intro-logo" />
+        <img src={logo} alt="Logo" className="intro-logo" />
         <h1>Clique</h1>
       </div>
     </div>
