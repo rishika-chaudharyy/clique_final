@@ -1,43 +1,55 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // ✅ import useNavigate
+import { useNavigate } from "react-router-dom";
 import "../styles/HeroSection.css";
 import leftImage from "../assets/left.jpg";
 import rightImage from "../assets/right.jpg";
 
 const HeroSection = () => {
-  const navigate = useNavigate(); // ✅ initialize navigator
+  const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    navigate("/programs"); // ✅ navigate to /programs on click
+    navigate("/programs"); // Change this route if needed
   };
 
   return (
     <div className="hero-container">
       <div className="hero-images">
+        {/* Left Section */}
         <div className="image-left">
-          <img src={leftImage} alt="Left" />
+          <img src={leftImage} alt="Clique IT & Analytics Club" />
+
           <div className="hero-overlay floating">
             <h1>
-              Transform Your Future with <span>INLIGHN TECH</span>
+              Think <span>Data</span>. Build <span>Technology</span>. Create{" "}
+              <span>Impact</span>.
             </h1>
+
             <p>
-              Step into the world of innovation through our immersive internship
-              programs.
+              Welcome to <strong>Clique – The IT & Analytics Club</strong>,
+              where technology meets innovation and ideas transform into
+              impactful solutions.
               <br />
-              Specializations in Cyber Security, Full Stack Development, Data
-              Science, Data Analytics & more.
               <br />
-              <strong>Learn today. Lead tomorrow.</strong>
+              Explore coding, artificial intelligence, data analytics,
+              hackathons, technical workshops, industry expert sessions, and
+              collaborative projects designed to prepare the next generation of
+              innovators.
+              <br />
+              <br />
+              <strong>Code. Analyze. Innovate.</strong>
             </p>
+
             <button className="explore-btn" onClick={handleExploreClick}>
-              Explore Internships
+              Explore Clique
             </button>
           </div>
         </div>
 
+        {/* Right Section */}
         <div className="image-right">
-          <img src={rightImage} alt="Right" />
+          <img src={rightImage} alt="Clique Activities" />
 
+          {/* Animated Curve 1 */}
           <div className="curvy-line-overlay">
             <svg
               width="100%"
@@ -53,11 +65,13 @@ const HeroSection = () => {
                 stroke="#ccc"
                 strokeWidth="4"
               />
+
               <circle r="8" fill="#ff5e57">
                 <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
                   <mpath href="#curvePath1" />
                 </animateMotion>
               </circle>
+
               <circle r="8" fill="#00c2ff">
                 <animateMotion
                   dur="6s"
@@ -71,6 +85,7 @@ const HeroSection = () => {
             </svg>
           </div>
 
+          {/* Animated Curve 2 */}
           <div className="curvy-line-overlay second-line">
             <svg
               width="100%"
@@ -86,11 +101,13 @@ const HeroSection = () => {
                 stroke="#ccc"
                 strokeWidth="4"
               />
+
               <circle r="8" fill="#42f563">
                 <animateMotion dur="7s" repeatCount="indefinite" rotate="auto">
                   <mpath href="#curvePath2" />
                 </animateMotion>
               </circle>
+
               <circle r="8" fill="#f5da42">
                 <animateMotion
                   dur="7s"

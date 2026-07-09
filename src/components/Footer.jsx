@@ -3,9 +3,8 @@ import "../styles/Footer.css";
 import {
   FaLinkedin,
   FaInstagram,
-  FaYoutube,
+  FaGithub,
   FaMapMarkerAlt,
-  FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
 
@@ -15,57 +14,60 @@ const Footer = () => {
       <div className="footer-container">
         {/* About */}
         <div className="footer-about">
-          <img src="/logo2.png" alt="InLighn Tech" className="footer-logo" />
+          <img src="/logo2.png" alt="Clique Logo" className="footer-logo" />
+
           <p>
-            At <strong>INLIGHN TECH</strong>, we believe that the future of
-            education lies in bridging the gap between academic learning and
-            industry needs.
+            <strong>Clique – The IT & Analytics Club</strong> is a vibrant
+            community of innovators, developers, analysts, and technology
+            enthusiasts committed to learning, collaboration, and creating
+            impactful solutions through technology.
           </p>
         </div>
 
-        {/* Menu */}
+        {/* Navigation */}
         <div className="footer-links">
-          <h3>Menu</h3>
+          <h3>Explore</h3>
+
           <ul>
             <li>Home</li>
-            <li>About Us</li>
-            <li>Programs</li>
-            <li>Contact Us</li>
-            <li>Login To Portal</li>
+            <li>About</li>
+            <li>Events</li>
+            <li>Team</li>
+            <li>Contact</li>
           </ul>
         </div>
 
-        {/* Quick Links */}
+        {/* Activities */}
         <div className="footer-links">
-          <h3>Quick Links</h3>
+          <h3>Activities</h3>
+
           <ul>
-            <li>Privacy Policy</li>
-            <li>Term & Conditions</li>
-            <li>Disclaimer</li>
-            <li>FAQ's</li>
+            <li>Workshops</li>
+            <li>Hackathons</li>
+            <li>Tech Talks</li>
+            <li>Competitions</li>
+            <li>Projects</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div className="footer-contact">
-          <h3>Follow Us</h3>
+          <h3>Connect With Us</h3>
+
           <div className="social-icons">
             <FaLinkedin />
             <FaInstagram />
-            <FaYoutube />
+            <FaGithub />
           </div>
+
           <p>
-            <FaMapMarkerAlt /> Corporate Office- Office No: VO-301, WeWork
-            Prestige Central, Ground Floor,
+            <FaMapMarkerAlt /> Nirma University,
             <br />
-            36, Infantry Rd, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka
-            560001
+            Ahmedabad, Gujarat, India
           </p>
+
           <p>
-            <FaPhoneAlt /> +91 9368842663
-          </p>
-          <p>
-            <FaEnvelope /> info@inlighntech.com
+            <FaEnvelope /> clique@nirmauni.ac.in
           </p>
         </div>
       </div>

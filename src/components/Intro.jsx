@@ -66,7 +66,7 @@ const Intro = ({ onComplete }) => {
       <canvas ref={canvasRef} className="snow-canvas" />
       <div className="intro-content">
         <img src="/logo.png" alt="Logo" className="intro-logo" />
-        <h1>InlighnTech</h1>
+        <h1>Clique</h1>
       </div>
     </div>
   );

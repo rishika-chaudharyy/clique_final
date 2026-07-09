@@ -5,19 +5,19 @@ import "../styles/WhyChooseUs.css";
 
 const features = [
   {
-    title: "Industry-Aligned Curriculum",
-    desc: "Our programs are designed in collaboration with top tech companies, ensuring you're learning skills that matter.",
-    icon: "🧠",
+    title: "Learn Beyond the Classroom",
+    desc: "Participate in technical workshops, coding sessions, and hands-on learning experiences that complement your academic journey.",
+    icon: "💡",
   },
   {
-    title: "Personalized Mentorship",
-    desc: "Every intern receives dedicated mentorship and regular feedback to accelerate learning and confidence.",
+    title: "Collaborate & Innovate",
+    desc: "Work alongside passionate developers, designers, and analysts on hackathons, real-world projects, and innovative challenges.",
     icon: "🤝",
   },
   {
-    title: "Career Support & Certification",
-    desc: "From resume polishing to mock interviews — we help you land your dream role, backed with professional certification.",
-    icon: "🎓",
+    title: "Grow Your Network",
+    desc: "Connect with industry professionals, alumni, and like-minded peers through expert talks, networking events, and leadership opportunities.",
+    icon: "🚀",
   },
 ];
 
@@ -30,9 +30,12 @@ const WhyChooseUs = () => {
     <section className="why-section" id="why-us">
       <div className="why-header" data-aos="fade-down">
         <h2>
-          Why Choose <span>INLIGHN TECH</span>?
+          Why Join <span>Clique?</span>
         </h2>
-        <p>Your transformation begins here.</p>
+        <p>
+          Discover, innovate, and grow with a community driven by technology and
+          analytics.
+        </p>
       </div>
 
       <div className="why-cards">

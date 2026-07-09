@@ -9,7 +9,7 @@ import FeatureHighlights from "../components/FeatureHighlights";
 import WhoWeAre from "../components/WhoWeAre";
 import StatsSection from "../components/StatsSection";
 import WhyChooseUs from "../components/WhyChooseUs";
-import Testimonial from "../components/Testimonial";
+
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import ChatbotAssistant from "../components/ChatbotAssistant"; // Assuming you have a chatbot component
@@ -26,7 +26,7 @@ const Home = () => {
       <WhoWeAre />
       <StatsSection />
       <WhyChooseUs />
-      <Testimonial />
+
       <ContactUs />
       <Footer />
       <ChatbotAssistant />

@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
-
-import { AiOutlineHome } from "react-icons/ai";
-import { BiUserVoice } from "react-icons/bi";
-import { MdOutlineSchool, MdOutlineContactPage } from "react-icons/md";
-import { BsCheck2Circle } from "react-icons/bs";
-import { GiStarFormation } from "react-icons/gi";
-import { FiLogIn } from "react-icons/fi";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+
+import logo from "../assets/logo.png"; // Replace with your CLIQUE logo
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,48 +15,47 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar-container">
-        {/* Logo + Brand */}
-        <NavLink to="/" className="navbar-left" onClick={closeMenu}>
-          <img src="/logo2.png" alt="Logo" className="logo" />
-        </NavLink>
+        {/* Logo */}
+        <a href="#home" className="navbar-left" onClick={closeMenu}>
+          <img src={logo} alt="CLIQUE Logo" className="logo" />
+        </a>
 
-        {/* Nav Links */}
-        <div className={`navbar-links ${menuOpen ? "show" : ""}`}>
-          <NavLink to="/" className="nav-link" onClick={closeMenu}>
-            <AiOutlineHome className="icon" />
-            <span>Home</span>
-          </NavLink>
-          <NavLink to="/about" className="nav-link" onClick={closeMenu}>
-            <BiUserVoice className="icon" />
-            <span>About Us</span>
-          </NavLink>
-          <NavLink to="/programs" className="nav-link" onClick={closeMenu}>
-            <MdOutlineSchool className="icon" />
-            <span>Programs</span>
-          </NavLink>
-          <NavLink to="/verify" className="nav-link" onClick={closeMenu}>
-            <BsCheck2Circle className="icon" />
-            <span>Verify Certificate</span>
-          </NavLink>
-          <NavLink to="/special" className="nav-link" onClick={closeMenu}>
-            <GiStarFormation className="icon" />
-            <span>What’s Special</span>
-          </NavLink>
-          <NavLink to="/contact" className="nav-link" onClick={closeMenu}>
-            <MdOutlineContactPage className="icon" />
-            <span>Contact Us</span>
-          </NavLink>
+        {/* Navigation */}
+        <nav className={`navbar-links ${menuOpen ? "show" : ""}`}>
+          <a href="#home" className="nav-link" onClick={closeMenu}>
+            Home
+          </a>
 
-          <NavLink
-            to="/login"
-            className="nav-link login-link"
-            onClick={closeMenu}
-          >
-            <span className="login-btn">Login to Portal</span>
-          </NavLink>
-        </div>
+          <a href="#about" className="nav-link" onClick={closeMenu}>
+            About
+          </a>
 
-        {/* Hamburger Icon */}
+          <a href="#domains" className="nav-link" onClick={closeMenu}>
+            Domains
+          </a>
+
+          <a href="#events" className="nav-link" onClick={closeMenu}>
+            Events
+          </a>
+
+          <a href="#team" className="nav-link" onClick={closeMenu}>
+            Team
+          </a>
+
+          <a href="#gallery" className="nav-link" onClick={closeMenu}>
+            Gallery
+          </a>
+
+          <a href="#contact" className="nav-link" onClick={closeMenu}>
+            Contact
+          </a>
+
+          <a href="#join" className="nav-link login-link" onClick={closeMenu}>
+            <span className="login-btn">Join CLIQUE</span>
+          </a>
+        </nav>
+
+        {/* Mobile Menu */}
         <div className="menu-icon mobile-only" onClick={toggleMenu}>
           {menuOpen ? <IoClose /> : <GiHamburgerMenu />}
         </div>

@@ -23,25 +23,34 @@ const AboutInternship = () => {
           }}
         >
           <div className="floating-image-wrapper">
-            <img alt="Internship Visual" src={bg} className="floating-img" />
+            <img
+              alt="Clique IT & Analytics Club"
+              src={bg}
+              className="floating-img"
+            />
           </div>
         </div>
 
         <div className="about-content">
-          <h2 className="about-title">
-            Empowering Your Career Through Experience
-          </h2>
+          <h2 className="about-title">Where Technology Meets Innovation</h2>
+
           <p className="about-desc">
-            At <strong>INLIGHN TECH</strong>, we believe education should go
-            beyond textbooks. Our internships are crafted to equip you with
-            in-demand skills through real-world projects in{" "}
-            <strong>Full Stack Development</strong>,{" "}
-            <strong>Data Science</strong>, and
-            <strong> Project Management</strong>. Learn by doing, grow with
-            experts, and step confidently into your future.
+            <strong>Clique – The IT & Analytics Club</strong> is a community of
+            passionate innovators, developers, analysts, and problem-solvers. We
+            create opportunities for students to explore emerging technologies
+            through <strong>technical workshops</strong>,
+            <strong> hackathons</strong>, <strong>coding competitions</strong>,
+            <strong> AI & Data Analytics sessions</strong>, industry talks, and
+            collaborative projects.
+            <br />
+            <br />
+            Whether you're just starting your tech journey or looking to sharpen
+            your expertise, Clique provides the perfect platform to learn,
+            collaborate, innovate, and grow alongside like-minded peers.
           </p>
+
           <Link to="/about" className="know-more-btn">
-            Know More
+            Learn More
           </Link>
         </div>
       </div>

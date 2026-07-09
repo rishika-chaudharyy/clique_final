@@ -3,10 +3,30 @@ import CountUp from "react-countup";
 import "../styles/StatsSection.css";
 
 const stats = [
-  { label: "Interns Enrolled", value: 5000, suffix: "+", color: "#4b5ccc" },
-  { label: "Projects Completed", value: 9000, suffix: "+", color: "#27ae60" },
-  { label: "Satisfaction Rate", value: 93, suffix: "%", color: "#f39c12" },
-  { label: "Top Instructors", value: 30, suffix: "+", color: "#e74c3c" },
+  {
+    label: "Club Members",
+    value: 500,
+    suffix: "+",
+    color: "#4b5ccc",
+  },
+  {
+    label: "Events Organized",
+    value: 45,
+    suffix: "+",
+    color: "#27ae60",
+  },
+  {
+    label: "Industry Partners",
+    value: 20,
+    suffix: "+",
+    color: "#f39c12",
+  },
+  {
+    label: "Workshops & Hackathons",
+    value: 35,
+    suffix: "+",
+    color: "#e74c3c",
+  },
 ];
 
 const StatsSection = () => {
@@ -29,6 +49,7 @@ const StatsSection = () => {
                 scrollSpyOnce
               />
             </h2>
+
             <p className="stat-label">{stat.label}</p>
           </div>
         ))}
